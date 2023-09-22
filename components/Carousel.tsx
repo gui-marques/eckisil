@@ -21,19 +21,26 @@ export default function Carousel({
   }, [])
 
   const slides = [
-    "https://i.imgur.com/p2M5Uou.png",
-    "https://i.imgur.com/RqL6emO.png",
-    "https://i.imgur.com/Lj8Zb9k.png",
+    "https://www.eckisil.com.br/_imagens/_banners/453692banner_2013_1.png",
+    "https://www.eckisil.com.br/_imagens/_banners/883746banner_2013_6.png",
+    "https://www.eckisil.com.br/_imagens/_banners/374885banner_2013_3.png",
+    "https://www.eckisil.com.br/_imagens/_banners/437197banner_2013_5.png",    
+    "https://www.eckisil.com.br/_imagens/_banners/208763banner_2013_4.png",
+    "https://www.eckisil.com.br/_imagens/_banners/406809banner_2013_2.png",
+    "https://www.eckisil.com.br/_imagens/_banners/179897banner03.png",
+    "https://www.eckisil.com.br/_imagens/_banners/690056banner06.png",
+    "https://www.eckisil.com.br/_imagens/_banners/706949banner05.png",
+    "https://www.eckisil.com.br/_imagens/_banners/819290banner02.png"
     
   ];
   return (
-    <div className="overflow-hidden  cursor-pointer relative">
+    <div className="overflow-hidden relative">
       <div
         className="flex  transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
        {slides.map((s) => (       
-          <img src={s} alt="1" className="min-w-full min-h-full " />
+          <img src={s} alt="1" className="min-w-full " />
        
       ))}
       </div>

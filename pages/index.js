@@ -1,8 +1,8 @@
 import Header from '../components/header';
 import Main from '../components/main';
 import Empresa from '../components/empresa';
+import {Contact} from '../components/contact';
 import SDescription from '../components/second-sedcription';
-import Quote from '../components/quote';
 import Card from '../components/card';
 import FAQ from '../components/faq';
 import FreeTrial from '../components/freeTrial';
@@ -20,12 +20,14 @@ export default function Home() {
       <Header />
       <Main />
       <Empresa />
+     
       {/* <SDescription /> */}
-      {/* <Quote />
-      <Card />
-      <FAQ />
-      <FreeTrial />
-      <Footer /> */}
+      {/* <Quote /> */}
+      {/* <Card /> */}
+      {/* <FAQ /> */}
+      {/* <FreeTrial /> */}
+      <Contact />
+      <Footer />
     </>
   );
 }

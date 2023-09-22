@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-
+import { Link } from "react-scroll";
 const header = () => {
   return (
     <header className="fixed w-full z-10">
@@ -119,13 +119,21 @@ const header = () => {
                 </a>
               </li>
               <li>
-                <a
-                  href="#CONTACT"
-                  className="block py-2 pl-3 pr-4 text-gray-700 border-b border-red-100 hover:bg-red-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-red dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-200"
-                >
+
+              <Link 
+              to="contact"
+              activeClass="active"
+              offset={-30}
+              spy={true}
+              className="block cursor-pointer	py-2 pl-3 pr-4 text-gray-700 border-b border-red-100 hover:bg-red-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-700 lg:p-0 dark:text-gray-400 lg:dark:hover:text-red dark:hover:bg-gray-700 dark:hover:text-white lg:dark:hover:bg-transparent dark:border-gray-200"
+              
+              >
+             
                   Contato
-                </a>
-              </li>
+               
+              
+              </Link>
+                </li>
             </ul>
           </div>
         </div>
